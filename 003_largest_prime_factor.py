@@ -19,22 +19,22 @@ for i in range(t):
 for n in ns:
     largestPrime = 1
     # Start with first 'prime' to test, 2
-    p=2 
+    prime = 2 
     # Loop through 'primes' until the p we are testing is greater than the square root of n
     # When p^2 is greater than n, it is no longer a possible factor
     # This is because the root of n is the upper limit of its factors as shown by perfect squares
     # E.g. 7 is the largest factor of 49
-    while p * p <= n: 
-        if n % p == 0: # If it is a factor (has no remainder)
-            largestPrime = p
-            while n % p == 0: # Divide out the factor then set n to the quotient
-                n = n / p
+    while prime * prime <= n: 
+        if n % prime == 0: # If it is a factor (has no remainder)
+            largestPrime = prime
+            while n % prime == 0: # Divide out the factor then set n to the quotient
+                n = n / prime
         # Loop through our 'primes', just 2 plus odd numbers: 2,3,5,7,9,11...
-        # This is not the most performant due to it testing against odd non primes
-        if p == 2:
-            p = 3
+        # This is not the most performant due to it testing against odd non primes (9,15...)
+        if prime == 2:
+            prime = 3
         else:
-            p = p + 2
+            prime = prime + 2
     # Since we divided out all numbers less than the root,
     # Anything left in n must be a prime itself
     if n != 1:

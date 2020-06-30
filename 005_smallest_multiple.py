@@ -14,7 +14,7 @@
 t = input('') # Get number of tests
 ns = []
 for i in range(t):
-    ns.append(int(input(''))) # Get n
+    ns.append(int(raw_input(''))) # Get n
 
 for n in ns:
     # To find the smallest number divisible by 1 to n, we need to find a list of prime factors of numbers 1 to n and multiply them together

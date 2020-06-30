@@ -14,7 +14,7 @@
 t = input('') # Get number of tests
 ns = []
 for i in range(t):
-    ns.append(int(input(''))) # Get n
+    ns.append(int(raw_input(''))) # Get n
 
 for n in ns:
     largestPrime = 1

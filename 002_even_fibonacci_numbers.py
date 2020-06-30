@@ -36,7 +36,7 @@ def fibPosition(n):
 t = input('') # Get number of tests
 ns = []
 for i in range(t):
-    ns.append(int(input(''))) # Get n
+    ns.append(int(raw_input(''))) # Get n
 
 for n in ns:
     # Get position of n in Fib, round down to get index not exceding n

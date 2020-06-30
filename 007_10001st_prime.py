@@ -14,7 +14,7 @@
 t = input('') # Get number of tests
 ns = []
 for i in range(t):
-    ns.append(int(input(''))) # Get n
+    ns.append(int(raw_input(''))) # Get n
 
 # We will hold on to a list of primes so we don't require recalculation between tests
 # We will seed this list with the first two primes, 2 and 3
